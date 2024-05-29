@@ -59,7 +59,7 @@ public class DegreeController : Controller
         return Redirect("DegreeList");
     }
 
-    public IActionResult DegreeShowAndEdit (Guid Id)
+    public IActionResult DegreeEdit (Guid Id)
     {
         DegreeModel carrera = new DegreeModel();
         carrera.Id = Id;
@@ -68,9 +68,18 @@ public class DegreeController : Controller
     }
 
     [HttpPost]
-    public IActionResult DegreeEdit()
+    public IActionResult DegreeEdit(DegreeModel carrera)
     {
+        if (!ModelState.IsValid)
+        {
+            _logger.LogWarning("El modelo no es valido");
+            carrera.Nombre= "Carrera no es valida";
+            return View(carrera);
+        }
+
+        _logger.LogInformation("El modelo es valido");
         return Redirect("DegreeList");
+
     }
 
     public IActionResult DegreeShowToDelete(Guid Id)
