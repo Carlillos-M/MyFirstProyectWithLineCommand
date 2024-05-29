@@ -1,6 +1,6 @@
 namespace   MyFirstProyectWithLineCommand.Models
 {
-    public class EntityModel
+    public class EntityModel : BaseModel
     {
         public EntityModel()
         {

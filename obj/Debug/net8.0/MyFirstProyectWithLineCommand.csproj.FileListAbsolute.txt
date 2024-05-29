@@ -28,3 +28,4 @@ C:\Users\ialda\OneDrive\Documentos\UN CEMR\6. SEXTO TETRA\3. POO II\1er Parcial\
 C:\Users\ialda\OneDrive\Documentos\UN CEMR\6. SEXTO TETRA\3. POO II\1er Parcial\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.pdb
 C:\Users\ialda\OneDrive\Documentos\UN CEMR\6. SEXTO TETRA\3. POO II\1er Parcial\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.genruntimeconfig.cache
 C:\Users\ialda\OneDrive\Documentos\UN CEMR\6. SEXTO TETRA\3. POO II\1er Parcial\MyFirstProyectWithLineCommand\obj\Debug\net8.0\ref\MyFirstProyectWithLineCommand.dll
+C:\Users\ialda\OneDrive\Documentos\UN CEMR\6. SEXTO TETRA\3. POO II\1er Parcial\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.sourcelink.json
