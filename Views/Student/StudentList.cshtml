@@ -32,8 +32,8 @@
         {
             <tr>
                 <td>
-                    <a class="btn btn-primary" asp-controller="Student" asp-action="StudentShowAndEdit">Editar</a>
-                    <a class="btn btn-danger" asp-controller="Student" asp-action="StudentShowToDelete">Borrar</a>
+                    <a class="btn btn-primary" asp-controller="Student" asp-action="StudentEdit" asp-asp-route-id="@student.Id">Editar</a>
+                    <a class="btn btn-danger" asp-controller="Student" asp-action="StudentShowToDelete" asp-asp-route-id="@student.Id">Borrar</a>
                 </td>
                 <td>
                     @student.Nombre

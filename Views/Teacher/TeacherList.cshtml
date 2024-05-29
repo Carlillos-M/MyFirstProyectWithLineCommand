@@ -20,7 +20,10 @@
         <tr>
             <th>Acciones</th>
             <th>Nombre</th>
-            <th>Carrera</th>
+            <th>Apellidos</th>
+            <th>Titulo</th>
+            <th>Grado Estudios</th>
+            <th>Salario</th>
         </tr>
     </thead>
 
@@ -29,16 +32,25 @@
         {
             <tr>
                 <td>
-                    <a class="btn btn-primary" asp-controller="Teacher" asp-action="TeacherShowAndEdit"
+                    <a class="btn btn-primary" asp-controller="Teacher" asp-action="TeacherEdit" asp-asp-route-id="@teacher.Id"
                     >Editar</a>
-                    <a class="btn btn-danger" asp-controller="Teacher" asp-action="TeacherShowToDelete"
+                    <a class="btn btn-danger" asp-controller="Teacher" asp-action="TeacherShowToDelete" asp-asp-route-id="@teacher.Id"
                     >Borrar</a>
                 </td>
                 <td>
                     @teacher.Nombre
                 </td>
                 <td>
-                    @teacher.Carrera
+                    @teacher.Apellidos
+                </td>
+                <td>
+                    @teacher.Titulo
+                </td>
+                <td>
+                    @teacher.GradoEstudios
+                </td>
+                <td>
+                    @teacher.Salario
                 </td>
             </tr>
         }

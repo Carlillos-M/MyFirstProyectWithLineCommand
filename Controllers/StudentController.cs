@@ -8,11 +8,6 @@ public class StudentController : Controller
     {
     }
 
-    public IActionResult StudentAdd()
-    {
-        return View();
-    }
-
     public IActionResult StudentList()
     {
         StudentModel alumno = new StudentModel();
@@ -37,18 +32,24 @@ public class StudentController : Controller
 
     }
 
-    public IActionResult StudentSave()
-    {
-        return Redirect("StudentList");
-    }
-
-    public IActionResult StudentShowAndEdit()
+    public IActionResult StudentAdd()
     {
         return View();
     }
 
     public IActionResult StudentEdit()
     {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult StudentAdd(StudentModel student)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
+
         return Redirect("StudentList");
     }
 

@@ -31,19 +31,20 @@ public class TeacherController : Controller
         return View(List);
     }
 
-    public IActionResult TeacherSave()
+    [HttpPost]
+    public IActionResult TeacherAdd(TeacherModel teacher)
     {
-        return Redirect("TeacherList");
-    }
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
 
-    public IActionResult TeacherShowAndEdit ()
-    {
-        return View();
+        return Redirect("TeacherList");
     }
 
     public IActionResult TeacherEdit()
     {
-        return Redirect("TeacherList");
+        return View();
     }
 
     public IActionResult TeacherShowToDelete()

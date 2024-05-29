@@ -1,17 +1,17 @@
 @model TeacherModel;
 
 @{
-    ViewData["Title"] = "Alta de Maestros";
+    ViewData["Title"] = "Editar Maestros";
+
 }
 
-
 <div class="text-center">
-    <h1 class="display-2">Alta de Maestros</h1>  
+    <h1 class="display-2">Editar Maestros</h1>  
 </div>
 
 <div asp-validation-summary="All" class="text-danger"></div>
 
-<form asp-controller="Teacher" asp-action="TeacherAdd">
+<form asp-controller="Teacher" asp-action="TeacherEdit">
     <div class="mb-3">
         <label asp-for="Nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" asp-for="Nombre" placeholder="Escriba el Nombre del Maestro" />
